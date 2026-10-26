@@ -66,9 +66,13 @@
 <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 <script type="module">
   import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-  createChat({
-  webhookUrl: 'https://zack1.app.n8n.cloud/webhook/d217adbf-dd72-43f4-97e2-ef4f3f30d419/chat'
+ createChat({
+  webhookUrl: 'https://zack1.app.n8n.cloud/webhook/d217adbf-dd72-43f4-97e2-ef4f3f30d419/chat',
+  mode: 'window',
+  chatSessionKey: 'sydney-home-plumbing-session',
+  loadPreviousSession: false
 });
+
 
 </script>
 
