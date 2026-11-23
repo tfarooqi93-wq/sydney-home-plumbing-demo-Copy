@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,7 +53,10 @@
         or submit a plumbing enquiry.
       </p>
       <p>
-        Our virtual assistant Nathan will appear here soon.
+        Meet Nathan, our AI-powered plumbing assistant!
+        Click the chat button in the bottom-right corner
+        to ask questions, explore our services, or submit
+        a plumbing enquiry.
       </p>
       <p><strong>Demonstration only — not a real plumbing service.</strong></p>
     </div>
@@ -64,6 +66,21 @@
     Sydney Home Plumbing | AI Automation Demo
   </footer>
 <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  
+<style>
+  :root {
+    --chat--window--width: 400px;
+    --chat--window--height: 600px;
+  }
+
+  @media (max-width: 600px) {
+    :root {
+      --chat--window--width: 100vw;
+      --chat--window--height: 100dvh;
+    }
+  }
+</style>
+
 <script type="module">
   import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
  createChat({
