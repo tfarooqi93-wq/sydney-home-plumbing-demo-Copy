@@ -11,14 +11,14 @@
       background: #f4f7fb;
       color: #243247;
     }
-    header {
-      background: #12365a;
+body > header {      
+  background: #12365a;
       color: white;
       text-align: center;
       padding: 30px 20px;
     }
-    main {
-      max-width: 850px;
+body > main {      
+  max-width: 850px;
       margin: 60px auto;
       padding: 20px;
       text-align: center;
@@ -29,10 +29,11 @@
       border-radius: 16px;
       box-shadow: 0 4px 18px #00000012;
     }
-    h1 { font-size: 34px; }
-    p { font-size: 18px; line-height: 1.7; }
-    footer {
-      text-align: center;
+body > main h1 { font-size: 34px; }
+body > header p,
+body > main p { font-size: 18px; line-height: 1.7; }
+body > footer {      
+  text-align: center;
       padding: 25px;
       color: #667;
     }
@@ -68,19 +69,7 @@
   
 <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
   
-<style>
-  :root {
---chat--window--width: 360px;
---chat--window--height: 500px;
-  }
 
-  @media (max-width: 600px) {
-    :root {
-      --chat--window--width: 100vw;
-      --chat--window--height: 100dvh;
-    }
-  }
-</style>
 
 <script type="module">
   import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
