@@ -71,13 +71,42 @@ body > footer {
   
 
 
+<style>
+  :root {
+    --chat--color-primary: #12365a;
+    --chat--color-primary-shade-50: #0e2b48;
+    --chat--color-primary-shade-100: #0a2036;
+    --chat--color-secondary: #2563eb;
+    --chat--header--background: #12365a;
+    --chat--header--color: #ffffff;
+    --chat--header--padding: 16px;
+--chat--header--height: auto;
+--chat--heading--font-size: 1.25rem;
+--chat--subtitle--font-size: 0.875rem;
+--chat--subtitle--line-height: 1.4;
+    --chat--toggle--background: #12365a;
+    --chat--toggle--hover--background: #0e2b48;
+  }
+
+</style>
 <script type="module">
   import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
  createChat({
     webhookUrl: 'https://zack1.app.n8n.cloud/webhook/dd59414c-6fdf-4947-85f4-7e089df39391/chat',
     mode: 'window',
     chatSessionKey: 'sessionId',
-    loadPreviousSession: false
+    loadPreviousSession: false,
+initialMessages: [
+    'Welcome to Sydney Home Plumbing! 👋',
+    "I'm Nathan, your AI plumbing assistant. I can answer questions about our services, opening hours and help you submit a plumbing enquiry. How can I assist you today?"
+],
+i18n: {
+    en: {
+        title: 'Sydney Home Plumbing',
+        subtitle: 'Your AI plumbing assistant, available 24/7.',
+        inputPlaceholder: 'How can we help you today?'
+    }
+}
 });
 
 
